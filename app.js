@@ -23,7 +23,13 @@ const data = {
 //   .catch((err) => console.log(err));
 
 //UPDATE USER API
-user
-  .put("https://jsonplaceholder.typicode.com/users/2", data)
-  .then((user) => console.log(user))
-  .catch((err) => console.log(err));
+// user
+//   .put("https://jsonplaceholder.typicode.com/users/2", data)
+//   .then((user) => console.log(user))
+//   .catch((err) => console.log(err));
+
+//DELETE USER API
+// user
+//   .delete("https://jsonplaceholder.typicode.com/users/2", data)
+//   .then((user) => console.log(user))
+//   .catch((err) => console.log(err));
