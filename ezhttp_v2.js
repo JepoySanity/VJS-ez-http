@@ -30,17 +30,14 @@ class EzHttp {
     return resData;
   }
   //delete request to api
-  delete(url) {
-    return new Promise((resolve, reject) => {
-      fetch(url, {
-        method: "DELETE",
-        headers: {
-          "Content-type": "application/json",
-        },
-      })
-        .then((res) => res.json())
-        .then(() => resolve("Resource Deleted"))
-        .catch((err) => reject(err));
+  async delete(url) {
+    const res = await fetch(url, {
+      method: "DELETE",
+      headers: {
+        "Content-type": "application/json",
+      },
     });
+    const resData = await "resource deleted";
+    return resData;
   }
 }
