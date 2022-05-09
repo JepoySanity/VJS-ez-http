@@ -19,16 +19,16 @@ const data = {
 //   .catch((err) => console.log(err));
 
 //CREATE USER API
-user
-  .post("https://jsonplaceholder.typicode.com/users", data)
-  .then((user) => console.log(user))
-  .catch((err) => console.log(err));
-
-//UPDATE USER API
 // user
-//   .put("https://jsonplaceholder.typicode.com/users/2", data)
+//   .post("https://jsonplaceholder.typicode.com/users", data)
 //   .then((user) => console.log(user))
 //   .catch((err) => console.log(err));
+
+//UPDATE USER API
+user
+  .put("https://jsonplaceholder.typicode.com/users/2", data)
+  .then((user) => console.log(user))
+  .catch((err) => console.log(err));
 
 //DELETE USER API
 // user
