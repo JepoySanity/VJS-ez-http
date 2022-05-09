@@ -10,11 +10,13 @@ const data = {
   email: "factoran20@gmail.com",
 };
 
+//uncomment methods to test individual functionality
+
 //GET USER API
-// user
-//   .get("https://jsonplaceholder.typicode.com/users")
-//   .then((user) => console.log(user))
-//   .catch((err) => console.log(err));
+user
+  .get("https://jsonplaceholder.typicode.com/users")
+  .then((user) => console.log(user))
+  .catch((err) => console.log(err));
 
 //CREATE USER API
 // user
