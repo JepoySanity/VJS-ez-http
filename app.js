@@ -13,16 +13,16 @@ const data = {
 //uncomment methods to test individual functionality
 
 //GET USER API
-user
-  .get("https://jsonplaceholder.typicode.com/users")
-  .then((user) => console.log(user))
-  .catch((err) => console.log(err));
-
-//CREATE USER API
 // user
-//   .post("https://jsonplaceholder.typicode.com/users", data)
+//   .get("https://jsonplaceholder.typicode.com/users")
 //   .then((user) => console.log(user))
 //   .catch((err) => console.log(err));
+
+//CREATE USER API
+user
+  .post("https://jsonplaceholder.typicode.com/users", data)
+  .then((user) => console.log(user))
+  .catch((err) => console.log(err));
 
 //UPDATE USER API
 // user
